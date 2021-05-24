@@ -9,7 +9,10 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #00ff73;
+  color: darkgoldenrod;
+  font-family: 'Avenir LT Std';
+  font-style: normal;
+  
 }
 
 .btn-primary {

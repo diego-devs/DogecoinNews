@@ -2,39 +2,40 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    
+
 }
-
 <div class="text-center">
-    <h1 class="display-4">Bienvenidos a ASP.NET</h1>
-    <p><a href="https://docs.microsoft.com/aspnet/core">Aprende más sobre ASP.NET</a>.</p>
+    <h1 class="display-4">Crypto News Daily</h1>
+    <p><a href="https://github.com/ddiazmendoza">Follow me on GitHub.</a>.</p>
+    <div>
+        <table class="table-dark">
+            <tr>
+                <td>Artículo</td>
+                <td>Descripción</td>
+            </tr>
+            <tr>
+                <td>
+                    @{
+                        try
+                        {
+                            var myModel = await IndexModel.SearchAsync("dogecoin", "en");
+                            var count = 0;
+                            foreach (var art in myModel.Articles)
+                            {
+                                <p><a href="@art.Url"> @art.Title; </a></p>
+                                count++;
+                            }
+                        }
+                        catch (System.Exception n)
+                        {
+                            System.Console.WriteLine("Error connection" + n.Message);
+                        }
+                    }
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
-<form class="form-floating">
-  <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
-  <label for="floatingInputValue">search</label>
-</form>
-    @{
-        var search = "dogecoin" ;
-        var lang = "language";
-        try
-            {
-                var myModel = await Connection.EstablishConnection(search, lang);
-                var count = 0;
-                foreach (var art in myModel.Articles) 
-                {
-                    count++;
-                    System.Console.WriteLine(art.Url);
-                    
-                    
-                }
 
-            }
-            catch (System.Exception n)
-            {
-                System.Console.WriteLine("Error connection" + n.Message);
-            }
-    }
-<div class="Search">@search</div>
-<div class = "Language">@lang </div>
 
 
