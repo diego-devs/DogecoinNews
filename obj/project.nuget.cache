@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uLSYbWTzfr+/disDJeBIYjdUlo2IEK6xzdwTHO4fLcuHsx7KdRlSig7aBcM8kSGOAokTpkOnAHrslIW4/bPFcg==",
+  "dgSpecHash": "/kjrLWvufeU0nLaCg9aqusbpgDAYw2vmnb/V4/yOKh0U9TfU4vZMvCc1iVHOTmSyW/urLRxS4qZw0nCp0GGSpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Dogecoin News Daily.csproj",
+  "projectFilePath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Dogecoin News Daily.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

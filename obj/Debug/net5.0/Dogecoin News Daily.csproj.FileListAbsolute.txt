@@ -37,3 +37,43 @@ C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\HolaMundoRazor\obj\Debug\
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\HolaMundoRazor\obj\Debug\net5.0\Dogecoin News Daily.pdb
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\HolaMundoRazor\obj\Debug\net5.0\Dogecoin News Daily.genruntimeconfig.cache
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\HolaMundoRazor\obj\Debug\net5.0\Dogecoin News Daily.csproj.CopyComplete
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\appsettings.json
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.exe
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.deps.json
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.runtimeconfig.json
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.runtimeconfig.dev.json
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\ref\Dogecoin News Daily.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.pdb
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.Views.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.Views.pdb
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.csprojAssemblyReference.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.AssemblyInfoInputs.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.AssemblyInfo.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.csproj.CoreCompileInputs.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.RazorAssemblyInfo.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.RazorAssemblyInfo.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\staticwebassets\Dogecoin News Daily.StaticWebAssets.Manifest.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\staticwebassets\Dogecoin News Daily.StaticWebAssets.xml
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\scopedcss\bundle\Dogecoin News Daily.styles.css
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.TagHelpers.input.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.TagHelpers.output.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.RazorCoreGenerate.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.RazorTargetAssemblyInfo.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.RazorTargetAssemblyInfo.cs
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.Views.pdb
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\ref\Dogecoin News Daily.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.pdb
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.genruntimeconfig.cache
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.csproj.CopyComplete

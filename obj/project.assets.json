@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Dogecoin News Daily.csproj",
+      "projectUniqueName": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Dogecoin News Daily.csproj",
       "projectName": "Dogecoin News Daily",
-      "projectPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Dogecoin News Daily.csproj",
+      "projectPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Dogecoin News Daily.csproj",
       "packagesPath": "C:\\Users\\d_dia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\obj\\",
+      "outputPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

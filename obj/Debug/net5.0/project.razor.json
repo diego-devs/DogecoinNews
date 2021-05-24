@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\HolaMundoRazor.csproj",
+  "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Dogecoin News Daily.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,41 +15616,41 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "HolaMundoRazor",
+  "RootNamespace": "DogecoinNewsDaily",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Pages\\Index.cshtml",
+      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],
