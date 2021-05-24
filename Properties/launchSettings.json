@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "HolaMundoRazor": {
+    "DogecoinNewsDaily": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

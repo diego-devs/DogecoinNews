@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\HolaMundoRazor.csproj",
-      "projectName": "HolaMundoRazor",
-      "projectPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\HolaMundoRazor.csproj",
+      "projectUniqueName": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Dogecoin News Daily.csproj",
+      "projectName": "Dogecoin News Daily",
+      "projectPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\Dogecoin News Daily.csproj",
       "packagesPath": "C:\\Users\\d_dia\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\obj\\",
       "projectStyle": "PackageReference",

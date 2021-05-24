@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
 
-namespace HolaMundoRazor.Pages
+namespace DogecoinNewsDaily.Pages
 {
     public class IndexModel : PageModel
     {
@@ -64,6 +64,23 @@ namespace HolaMundoRazor.Pages
                 Console.WriteLine(e.Message);
                 return null;
             }
+        }
+        public static async Task<string> GetCurrencyAsyc() 
+        {
+            var url = @"https://sochain.com//api/v2/get_price/DOGE/USD";
+            var myClient = new HttpClient() { BaseAddress = new Uri(url)};
+
+            var request = await myClient.GetAsync(myClient.BaseAddress);
+            string myCurrency;
+            if (request.IsSuccessStatusCode)
+            {
+                var content = await request.Content.ReadAsStringAsync();
+                var model = JsonSerializer.Deserialize<Currency>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                System.Console.WriteLine($"Dogecoin price today : {model.data.prices[0].price} USD");
+                myCurrency = model.data.prices[0].price;
+            }
+            else { return null; }
+            return myCurrency;
         }
         
     }

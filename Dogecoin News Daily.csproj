@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Dogecoin News Daily</AssemblyName>
+    <RootNamespace>DogecoinNewsDaily</RootNamespace>
   </PropertyGroup>
 
 </Project>

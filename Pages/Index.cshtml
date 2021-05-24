@@ -2,38 +2,97 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var myModel = await IndexModel.SearchAsync("dogecoin", "en");
+    var count = 0;
 
 }
 <div class="text-center">
-    <h1 class="display-4">Crypto News Daily</h1>
+    <h1 class="display-4" style="font-family: 'Avenir LT Std'; font-style: oblique">DOGE News Daily</h1>
     <p><a href="https://github.com/ddiazmendoza">Follow me on GitHub.</a>.</p>
     <div>
-        <table class="table-dark">
-            <tr>
-                <td>Artículo</td>
-                <td>Descripción</td>
-            </tr>
-            <tr>
-                <td>
-                    @{
-                        try
-                        {
-                            var myModel = await IndexModel.SearchAsync("dogecoin", "en");
-                            var count = 0;
-                            foreach (var art in myModel.Articles)
-                            {
-                                <p><a href="@art.Url"> @art.Title; </a></p>
-                                count++;
-                            }
-                        }
-                        catch (System.Exception n)
-                        {
-                            System.Console.WriteLine("Error connection" + n.Message);
-                        }
-                    }
-                </td>
-            </tr>
-        </table>
+        <div class="container bootstrap snippets bootdey">
+            <div class="col-sm-4">
+                <div class="widget single-news">
+                    <div class="image">
+                        <img src="@myModel.Articles[0].UrlToImage" class="img-responsive">
+                        <span class="gradient"></span>
+                    </div>
+                    <div class="details">
+                        <div class="category"><a href="">DOGE</a></div>
+                        <h3><a href="">@myModel.Articles[0].Title</a></h3>
+                        <time>@myModel.Articles[0].PublishedAt</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget single-news">
+                    <div class="image">
+                        <img src="@myModel.Articles[1].UrlToImage" class="img-responsive">
+                        <span class="gradient"></span>
+                    </div>
+                    <div class="details">
+                        <div class="category"><a href="">2</a></div>
+                        <h3><a href="">@myModel.Articles[1].Title</a></h3>
+                        <time>@myModel.Articles[1].PublishedAt</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget single-news">
+                    <div class="image">
+                        <img src="@myModel.Articles[2].UrlToImage" class="img-responsive">
+                        <span class="gradient"></span>
+                    </div>
+                    <div class="details">
+                        <div class="category"><a href="">3</a></div>
+                        <h3><a href="">@myModel.Articles[2].Title</a></h3>
+                        <time>@myModel.Articles[2].PublishedAt</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @{
+            <table class="table-dark" style="object-fit: scale-down"; object-position: center;">
+                        <tr>
+                            <td>Img</td>
+                            <td>Artículo</td>
+                            <td>Descripción</td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                @{
+                                    foreach (var art in myModel.Articles)
+                                    {
+                                        <img src="@art.UrlToImage" alt="img not found" style="max-height: 100px; max-width: 100px" />
+                                    }
+                                }
+                            </td>
+                            <td>
+                                @{
+                                    foreach (var art in myModel.Articles)
+                                    {
+                                        <p><a href="@art.Url"> @art.Title; </a></p>
+                                        count++;
+                                    }
+                                }
+                            </td>
+                            <td>
+                                @{
+                                    foreach (var art in myModel.Articles)
+                                    {
+                                        <p style="font-family: Gotham"> @art.Description;</p>
+
+                                    }
+                                }
+                            </td>
+
+
+                        </tr>
+            </table>
+        }
     </div>
 </div>
 

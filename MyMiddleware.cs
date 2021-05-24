@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HolaMundoRazor
+namespace DogecoinNewsDaily
 {
     // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
     public class MyMiddleware

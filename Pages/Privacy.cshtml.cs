@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace HolaMundoRazor.Pages
+namespace DogecoinNewsDaily.Pages
 {
     public class PrivacyModel : PageModel
     {

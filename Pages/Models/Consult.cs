@@ -1,4 +1,4 @@
-namespace HolaMundoRazor
+namespace DogecoinNewsDaily
 {
     internal class Consult
     {

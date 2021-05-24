@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundoRazor", "HolaMundoRazor.csproj", "{AAE77698-FF26-4B2F-96A4-A34654E9449A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dogecoin News Daily", "Dogecoin News Daily.csproj", "{AAE77698-FF26-4B2F-96A4-A34654E9449A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AAE77698-FF26-4B2F-96A4-A34654E9449A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +27,11 @@ Global
 		{AAE77698-FF26-4B2F-96A4-A34654E9449A}.Release|x64.Build.0 = Release|Any CPU
 		{AAE77698-FF26-4B2F-96A4-A34654E9449A}.Release|x86.ActiveCfg = Release|Any CPU
 		{AAE77698-FF26-4B2F-96A4-A34654E9449A}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9843B6EA-C4B7-4B52-A8E1-3BA93A804878}
 	EndGlobalSection
 EndGlobal
