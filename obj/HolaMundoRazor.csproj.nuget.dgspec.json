@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\HolaMundoRazor.csproj": {}
+    "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\DogecoinNewsDaily.csproj": {}
   },
   "projects": {
-    "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\HolaMundoRazor.csproj": {
+    "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\DogecoinNewsDaily.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\HolaMundoRazor.csproj",
+        "projectUniqueName": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\DogecoinNewsDaily.csproj",
         "projectName": "Dogecoin News Daily",
-        "projectPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\HolaMundoRazor.csproj",
+        "projectPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\DogecoinNewsDaily.csproj",
         "packagesPath": "C:\\Users\\d_dia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\HolaMundoRazor\\obj\\",
+        "outputPath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

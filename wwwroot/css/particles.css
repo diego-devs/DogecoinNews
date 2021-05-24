@@ -1,0 +1,17 @@
+﻿body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+#info {
+    color: #fff;
+    position: absolute;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
