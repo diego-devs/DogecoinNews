@@ -4,13 +4,13 @@
 // Write your JavaScript code.
 
 //FEATURED HOVER
-$(document).ready(function () {
+$(document).ready(function(){
     $(".linkfeat").hover(
-        function () {
-            $(".textfeat").show(500);
-        },
-        function () {
-            $(".textfeat").hide(500);
-        }
-    );
+      function () {
+          $(".textfeat").show(500);
+      },
+      function () {
+          $(".textfeat").hide(500);
+      }
+  );
 });

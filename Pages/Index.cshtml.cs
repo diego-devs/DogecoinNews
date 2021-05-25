@@ -82,6 +82,21 @@ namespace DogecoinNewsDaily.Pages
             else { return null; }
             return myCurrency;
         }
-        
+        public static List<Article> CheckDoubleArticles(List<Article> DogeNewsArticles) 
+        {
+            var myNewList = new List<Article>();
+
+            for (int i = 0; i < DogeNewsArticles.Count; i++)
+            {
+                for (int y = 0; y < DogeNewsArticles.Count; y++)
+                {   
+                    if (DogeNewsArticles[i].Title == DogeNewsArticles[y].Title) 
+                    {
+                        DogeNewsArticles.RemoveAt(i);
+                    }
+                }
+            }
+            return DogeNewsArticles;
+        }
     }
 }
