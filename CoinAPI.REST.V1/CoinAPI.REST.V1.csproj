@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.1</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>CoinAPI.REST.V1</PackageId>
+    <Authors>COINAPI LTD</Authors>
+    <Product>CoinAPI.REST</Product>
+    <Description>SDK for www.CoinAPI.io REST API</Description>
+    <PackageProjectUrl>https://www.CoinAPI.io</PackageProjectUrl>
+    <PackageIconUrl>https://www.coinapi.io/img/favicon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/coinapi/coinapi-sdk/</RepositoryUrl>
+    <RepositoryType>GitHub.com</RepositoryType>
+    <PackageTags>coinapi sdk rest v1 api</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Company>COINAPI LTD</Company>
+    <Copyright>COINAPI LTD or its affiliates</Copyright>
+    <Version>2.0.6</Version>
+    <UserSecretsId>17704ec2-7050-452e-99b5-0eddf76dea5d</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

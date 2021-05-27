@@ -9,7 +9,7 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-  color: darkgoldenrod;
+  color: rgb(194, 230, 255);
   font-family: 'Avenir LT Std';
   font-style: normal;
   
@@ -62,6 +62,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   margin-top:20px;
+  background-color: lightgoldenrodyellow;
 }
 .footer {
   position: absolute;
@@ -156,7 +157,7 @@ body {
 
  p {
      font-size: 14px;
-     color: #777;
+     color: rgb(255, 255, 255);
  }
  
  .blog .image {

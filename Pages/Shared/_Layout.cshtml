@@ -18,32 +18,37 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">DOGE News</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">DOGE News</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">News<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Markets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                </ul>
+                <span class="navbar-text">
+                    
+                </span>
+                <bold style="font-family: Gotham; color:darkgoldenrod">DOGE price now:  $@currency USD</bold>>
+                <strong>Updated: @DateTime.Now.ToShortTimeString(); </strong>
             </div>
-            <div>
-                <p style="font-family: Gotham; color:darkgoldenrod">DOGE price now:  $@currency USD.</p>>
-                <p>Updated: @DateTime.Now.ToShortTimeString(); </p>
-            </div>>
         </nav>
     </header>
     <div class="container">
+        <div class="align-center">
+            <div class="">
+
+            </div>
+        </div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -51,7 +56,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - DogecoinNews<a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2021 - Dogecoin News<a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
