@@ -7,4 +7,8 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RestClient.Net" Version="5.0.6" />
+  </ItemGroup>
+
 </Project>

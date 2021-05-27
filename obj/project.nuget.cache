@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "/kjrLWvufeU0nLaCg9aqusbpgDAYw2vmnb/V4/yOKh0U9TfU4vZMvCc1iVHOTmSyW/urLRxS4qZw0nCp0GGSpw==",
+  "dgSpecHash": "5CfVWWzV3pxr/7HfjXdXKvWnfNCKDn5t7NYmDKvo02/3aA9uYLgF27GO/JkzD86nPNGwkTq90ToYOwwkKBnflw==",
   "success": true,
   "projectFilePath": "C:\\Users\\d_dia\\source\\repos\\cursos\\ASP.NETCoreEsencial\\DogecoinNewsDaily\\Dogecoin News Daily.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\d_dia\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.5\\microsoft.extensions.logging.abstractions.3.1.5.nupkg.sha512",
+    "C:\\Users\\d_dia\\.nuget\\packages\\restclient.net\\5.0.6\\restclient.net.5.0.6.nupkg.sha512",
+    "C:\\Users\\d_dia\\.nuget\\packages\\restclient.net.abstractions\\5.0.6\\restclient.net.abstractions.5.0.6.nupkg.sha512",
+    "C:\\Users\\d_dia\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
+    "C:\\Users\\d_dia\\.nuget\\packages\\urls\\1.0.0\\urls.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

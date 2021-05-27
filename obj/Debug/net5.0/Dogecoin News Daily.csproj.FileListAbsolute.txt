@@ -77,3 +77,6 @@ C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Deb
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.pdb
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.genruntimeconfig.cache
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.csproj.CopyComplete
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\RestClient.Net.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\RestClient.Net.Abstractions.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Urls.dll

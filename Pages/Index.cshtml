@@ -2,274 +2,287 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    var request = await IndexModel.SearchAsync("dogecoin", "en");
-    List<Article> DogeNews = request.Articles;
+
     
+    var requestDoge = await IndexModel.EverythingSearchAsync("dogecoin", "es");
+    List<Article> DogeNews = requestDoge.Articles;
+    var DogeShortTitles = IndexModel.GetShorterTitles(DogeNews);
+
+    var requestCrypto = await IndexModel.EverythingSearchAsync("crypto", "es");
+    List<Article> CryptoNews = requestCrypto.Articles;
+    var CryptoShortTitles = IndexModel.GetShorterTitles(CryptoNews);
+
+    var requestSpaceX = await IndexModel.EverythingSearchAsync("space x", "es");
+    var SpaceXNews = requestSpaceX.Articles;
+
+    var requestBitcoin = await IndexModel.EverythingSearchAsync("bitcoin", "es");
+    var BitcoinNews = requestBitcoin.Articles;
+
+    var requestEthereum = await IndexModel.EverythingSearchAsync("ethereum", "es");
+    var EthNews = requestEthereum.Articles;
+
+    var requestStarbase = await IndexModel.EverythingSearchAsync("starbase", "es");
+    var StarbaseNews = requestStarbase.Articles;
+
+    var requestElon = await IndexModel.EverythingSearchAsync("elon musk", "es");
+    var ElonNews = requestElon.Articles;;
+    
+    Random random = new Random();
 }
-<div class="container">
-    <div class="text-center">
-        <h1 class="display-4" style="font-family: Gotham">DOGE News</h1>
-        <p><a href="https://github.com/ddiazmendoza">Check out my GitHub</a></p>
+
+@*Blog template starts here*@
+<body>
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark" >
+    <img src="@CryptoShortTitles [0].UrlToImage" alt="">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">@CryptoShortTitles[random.Next(0, CryptoShortTitles .Count)].Title</h1>
+     
+      <p class="lead my-3">@CryptoShortTitles[0].Description</p>
+      <p class="lead mb-0"><a href="@CryptoShortTitles [0].Url" class="text-white fw-bold">Continue reading...</a></p>
     </div>
-</div>
-@*sliders*@
-
-
-<div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="@DogeNews[11].UrlToImage" alt="" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>@DogeNews[11].Source.Name</h3>
-          <p>@DogeNews[11].Title</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="@DogeNews[12].UrlToImage" alt="Chicago" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>@DogeNews[12].Source.Name</h3>
-          <p>@DogeNews[12].Title</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="@DogeNews[13].UrlToImage" alt="New York" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>@DogeNews[13].Source.Name</h3>
-          <p>@DogeNews[13].Title</p>
-        </div>
-      </div>
-  
-    </div>
-
-    <!-- Left and right controls -->
-
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
 
-<div>
-    <span>
-        .
-    </span>
-</div>
-
-
-@*First squares*@
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6  py-0 pl-3 pr-1 featcard">
-            <div id="featured" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card bg-dark text-white">
-                            <img class="card-img img-fluid" src="@DogeNews[0].UrlToImage" alt="">
-                            <div class="card-img-overlay d-flex linkfeat">
-                                <a href="@DogeNews[0].Url" class="align-self-end">
-                                    <span class="badge">@DogeNews[0].Source.Name</span>
-                                    <h4 class="card-title">@DogeNews[0].Title</h4>
-                                    <p class="textfeat" style="display: none;">@DogeNews[0].Description</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Crypto</strong>
+          <h3 class="mb-0">@SpaceXNews[0].Title</h3>
+          <div class="mb-1 text-muted">@DogeNews[0].PublishedAt</div>
+          <p class="card-text mb-auto">@DogeNews[0].Title</p>
+          <a href="#" class="stretched-link">Continue reading</a>
         </div>
-        <div class="col-6 py-0 px-1 d-none d-lg-block">
-            <div class="row">
-                <div class="col-6 pb-2 mg-1	">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img img-fluid" src="@DogeNews[1].UrlToImage" alt="">
-                        <div class="card-img-overlay d-flex">
-                            <a href="@DogeNews[1].Url" class="align-self-end">
-                                <span class="badge">@DogeNews[1].Source.Name</span>
-                                <h6 class="card-title">@DogeNews[1].Title</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 pb-2 mg-2	">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img img-fluid" src="@DogeNews[2].UrlToImage" alt="">
-                        <div class="card-img-overlay d-flex">
-                            <a href="@DogeNews[2].Url" class="align-self-end">
-                                <span class="badge">@DogeNews[2].Source.Name</span>
-                                <h6 class="card-title">@DogeNews[2].Title</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 pb-2 mg-3	">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img img-fluid" src="@DogeNews[3].UrlToImage" alt="">
-                        <div class="card-img-overlay d-flex">
-                            <a href="@DogeNews[3].Url" class="align-self-end">
-                                <span class="badge">@DogeNews[3].Source.Name</span>
-                                <h6 class="card-title">@DogeNews[3].Title</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 pb-2 mg-4	">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img img-fluid" src="@DogeNews[4].UrlToImage" alt="">
-                        <div class="card-img-overlay d-flex">
-                            <a href="@DogeNews[4].Url" class="align-self-end">
-                                <span class="badge">@DogeNews[4].Source.Name</span>
-                                <h6 class="card-title">@DogeNews[4].Title</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
         </div>
+      </div>
     </div>
-</div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Elon Musk</strong>
+          <h3 class="mb-0">@CryptoNews[0].Title</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-
-<!-- Own cards -->
-
-<div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="@DogeNews[14].UrlToImage" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">@DogeNews[14].Title</h5>
-        <p class="card-text">@DogeNews[14].Description</p>
-        <a href="@DogeNews[14].Url" class="btn btn-primary">View more</a>
+        </div>
+      </div>
     </div>
-</div>       
+  </div>
+
+  <div></div>
+
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="@DogeNews[0].UrlToImage" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">@DogeNews[0].Title</h5>
+        <p class="card-text">@DogeNews[0].Description</p>
+        <p class="card-text"><small class="text-muted">Last updated @DogeNews[0].PublishedAt</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="@DogeNews[0].UrlToImage" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">@DogeNews[0].Title</h5>
+        <p class="card-text">@DogeNews[0].Description</p>
+        <p class="card-text"><small class="text-muted">Last updated @DogeNews[0].PublishedAt</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="@DogeNews[0].UrlToImage" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">@DogeNews[0].Title</h5>
+        <p class="card-text">@DogeNews[0].Description</p>
+        <p class="card-text"><small class="text-muted">Last updated @DogeNews[0].PublishedAt</small></p>
+      </div>
+    </div>
+  </div>  
+
+  <div></div>
 
 
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        From the Firehose
+      </h3>
 
+      <article class="blog-post">
+        <h2 class="blog-post-title">Sample blog post</h2>
+        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
 
-@*Blog list*@
-
-<!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading -->
-        <h1 class="my-4">
-            DOGE latest news
-        </h1>
-
-        <!-- Project One -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="@DogeNews[5].Url">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="@DogeNews[5].UrlToImage" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>@DogeNews[5].Source.Name</h3>
-                <p>@DogeNews[5].Title</p>
-                <a class="btn btn-primary" href="@DogeNews[5].Url">Leer más</a>
-            </div>
-        </div>
-        <!-- /.row -->
-
+        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
         <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="@DogeNews[6].Url">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="@DogeNews[6].UrlToImage" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>@DogeNews[6].Source.Name</h3>
-                <p>@DogeNews[6].Title</p>
-                <a class="btn btn-primary" href="@DogeNews[6].Url">Leer más</a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-7">
-                <a href="@DogeNews[7].Url">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="@DogeNews[7].UrlToImage" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>@DogeNews[7].Source.Name</h3>
-                <p>@DogeNews[7].Title</p>
-                <a class="btn btn-primary" href="@DogeNews[7].Url">Leer más</a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-7">
-                <a href="@DogeNews[8].Url">
-                    <img class="img-fluid rounded mb-3 mb-md-0" src="@DogeNews[8].UrlToImage" alt="">
-                </a>
-            </div>
-            <div class="col-md-5">
-                <h3>@DogeNews[8].Source.Name</h3>
-                <p>@DogeNews[8].Title</p>
-                <a class="btn btn-primary" href="@DogeNews[8].Url">View more</a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Pagination -->
-        <ul class="pagination justify-content-center">
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </li>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h2>Blockquotes</h2>
+        <p>This is an example blockquote in action:</p>
+        <blockquote class="blockquote">
+          <p>Quoted text goes here.</p>
+        </blockquote>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Example lists</h3>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
         </ul>
+        <p>And this is an ordered list:</p>
+        <ol>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ol>
+        <p>And this is a definiton list:</p>
+        <dl>
+          <dt>HyperText Markup Language (HTML)</dt>
+          <dd>The language used to describe and define the content of a Web page</dd>
+          <dt>Cascading Style Sheets (CSS)</dt>
+          <dd>Used to describe the appearance of Web content</dd>
+          <dt>JavaScript (JS)</dt>
+          <dd>The programming language used to build advanced Web sites and applications</dd>
+        </dl>
+        <h2>Inline HTML elements</h2>
+        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+        <ul>
+          <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+          <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+          <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+          <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+          <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+        </ul>
+        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+        <h2>Heading</h2>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Sub-heading</h3>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <pre><code>Example code block</code></pre>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Another blog post</h2>
+        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <blockquote>
+          <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+        </blockquote>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Example table</h3>
+        <p>And don't forget about tables in these posts:</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Upvotes</th>
+              <th>Downvotes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Bob</td>
+              <td>4</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Charlie</td>
+              <td>7</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Totals</td>
+              <td>21</td>
+              <td>23</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">New feature</h2>
+        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ul>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+      </nav>
 
     </div>
-    <!-- /.container -->
-    <div>
-        <blockquote class="twitter-tweet" style="align-content: center;"><p lang="en" dir="ltr">Make humanity a multiplanet species!</p>&mdash; Elon Musk (@@elonmusk) <a href="https://twitter.com/elonmusk/status/1390387635961610242?ref_src=twsrc%5Etfw">May 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">About</h4>
+          <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">March 2021</a></li>
+            <li><a href="#">February 2021</a></li>
+            <li><a href="#">January 2021</a></li>
+            <li><a href="#">December 2020</a></li>
+            <li><a href="#">November 2020</a></li>
+            <li><a href="#">October 2020</a></li>
+            <li><a href="#">September 2020</a></li>
+            <li><a href="#">August 2020</a></li>
+            <li><a href="#">July 2020</a></li>
+            <li><a href="#">June 2020</a></li>
+            <li><a href="#">May 2020</a></li>
+            <li><a href="#">April 2020</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
     </div>
+  </div>
 
+</main>
 
+<footer class="blog-footer">
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+</body>
+ 
+ 
+</html>
 

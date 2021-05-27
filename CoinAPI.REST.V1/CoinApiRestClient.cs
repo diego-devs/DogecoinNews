@@ -1,12 +1,11 @@
-﻿
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using CoinAPI.REST.V1.Exceptions;
 using CoinAPI.REST.V1.DataModels;
 using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace CoinAPI.REST.V1
 {
@@ -86,7 +85,7 @@ namespace CoinAPI.REST.V1
         private static async Task<T> Deserialize<T>(HttpResponseMessage responseMessage)
         {
             var responseString = await responseMessage.Content.ReadAsStringAsync();
-            var data = JsonConvert.DeserializeObject<T>(responseString);
+            var data = JsonSerializer.Deserialize<T>(responseString);
             return data;
         }
 

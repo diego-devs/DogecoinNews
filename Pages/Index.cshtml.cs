@@ -19,13 +19,11 @@ namespace DogecoinNewsDaily.Pages
         {
             _logger = logger;
         }
-
         public void OnGet()
         {
             
         }
-
-        public static async Task<Model> SearchAsync(string search, string language)
+        public static async Task<Model> EverythingSearchAsync(string search, string language)
         {
             try
             {
@@ -33,7 +31,7 @@ namespace DogecoinNewsDaily.Pages
                 var lang = language;
                 var from = DateTime.Now.ToShortDateString(); // Fecha actual
                 
-                var url = "http://newsapi.org/v2/everything?" +
+                var url = "http://newsapi.org/v2/everything?sortBy=popularity&" +
                 $"q={q}&" +
                 $"language={lang}&" +
                 $"from={from}&" +
@@ -49,7 +47,7 @@ namespace DogecoinNewsDaily.Pages
                 {
                     var content = await request.Content.ReadAsStringAsync();             
                     var model = JsonSerializer.Deserialize<Model>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
-                    System.Console.WriteLine("Request status: " + model.Status + " Artículos encontrados: " +  model.Articles.Count);
+                    System.Console.WriteLine("Request status: " + model.Status + $" Everything seach: {q} / Found articles: " +  model.Articles.Count);
                     myModel = model;
                 }
                 else
@@ -98,5 +96,61 @@ namespace DogecoinNewsDaily.Pages
             }
             return DogeNewsArticles;
         }
+        public static List<Article> GetShorterTitles(List<Article> dogeNews) 
+        {
+            var shortTitles = new List<Article>(); 
+            
+            for (var i = 0; i < dogeNews.Count; i++)
+            {
+                if (dogeNews[i].Title.Length <= 55) 
+                {
+                    shortTitles.Add(dogeNews[i]);
+                }
+            }	
+            return shortTitles;
+
+        }
+
+        public static async Task<Model> PopularSearchAsync(string search, string language)
+        {
+            try
+            {
+                var q = search;
+                var lang = language;
+                var from = DateTime.Now.ToShortDateString(); // Fecha actual
+                
+                var url = "http://newsapi.org/v2/top-headlines?" +
+                $"q={q}&" +
+                $"language={lang}&" +
+                $"from={from}&" +
+                "sortBy=popularity&" +
+                "apiKey=fb86b898844247fb9b0000140cc3838c";
+
+                var myClient = new HttpClient() {BaseAddress = new Uri(url)};
+                var request = await myClient.GetAsync(myClient.BaseAddress);
+
+                var myModel = new Model();
+                
+                if (request.IsSuccessStatusCode)
+                {
+                    var content = await request.Content.ReadAsStringAsync();             
+                    var model = JsonSerializer.Deserialize<Model>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                    System.Console.WriteLine("Request status: " + model.Status + $"Top-headlines search: {q} / " + " Found articles: " +  model.Articles.Count);
+                    myModel = model;
+                }
+                else
+                {
+                    Console.WriteLine("Request error");
+                }
+                return myModel;
+        
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
+        }
+        
     }
 }
