@@ -31,7 +31,7 @@ namespace DogecoinNewsDaily.Pages
                 var lang = language;
                 var from = DateTime.Now.ToShortDateString(); // Fecha actual
                 
-                var url = "http://newsapi.org/v2/everything?sortBy=popularity&" +
+                var url = "http://newsapi.org/v2/everything?" +
                 $"q={q}&" +
                 $"language={lang}&" +
                 $"from={from}&" +
@@ -52,7 +52,7 @@ namespace DogecoinNewsDaily.Pages
                 }
                 else
                 {
-                    Console.WriteLine("Request error");
+                    Console.WriteLine("Request error" + request.Content);
                 }
                 return myModel;
         
