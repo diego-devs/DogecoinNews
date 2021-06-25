@@ -48,7 +48,6 @@ C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Deb
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.pdb
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.Views.dll
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Dogecoin News Daily.Views.pdb
-C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.csprojAssemblyReference.cache
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.AssemblyInfoInputs.cache
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.AssemblyInfo.cs
@@ -80,3 +79,4 @@ C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Deb
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\RestClient.Net.dll
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\RestClient.Net.Abstractions.dll
 C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\bin\Debug\net5.0\Urls.dll
+C:\Users\d_dia\source\repos\cursos\ASP.NETCoreEsencial\DogecoinNewsDaily\obj\Debug\net5.0\Dogecoin News Daily.csproj.AssemblyReference.cache
